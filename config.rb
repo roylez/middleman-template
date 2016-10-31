@@ -1,6 +1,13 @@
-require 'slim'
+###
+# basic settings
+###
+require 'slim/smart'
 require 'coffee-script'
 Slim::Engine.set_options pretty: true, sort_attrs: false
+
+set :css_dir,    "css"
+set :js_dir,     "js"
+set :images_dir, "img"
 
 ###
 # Page options, layouts, aliases and proxies
